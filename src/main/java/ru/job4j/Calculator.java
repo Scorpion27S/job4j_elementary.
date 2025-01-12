@@ -19,5 +19,9 @@ public class Calculator {
         int result = 2;
         int itog = ninenine * result;
         System.out.println(itog);
+        int size = 10;
+        size = 100;
+        size = size - 5;
+        System.out.println(size);
     }
 }
