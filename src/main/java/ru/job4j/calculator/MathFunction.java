@@ -18,6 +18,6 @@ public class MathFunction {
         int total = result1 + result2;
         System.out.println(total);
         int result3 = MathFunction.func1(100);
-       System.out.println(result3);
+        System.out.println(result3);
     }
 }
