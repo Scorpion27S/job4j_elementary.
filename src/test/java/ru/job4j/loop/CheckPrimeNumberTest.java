@@ -52,6 +52,7 @@ class CheckPrimeNumberTest {
         boolean result = CheckPrimeNumber.check(number);
         assertThat(result).isFalse();
     }
+
     @Test
     void when47ThenFalse() {
         int number = 47;
