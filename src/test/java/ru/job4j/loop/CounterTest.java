@@ -12,6 +12,7 @@ class CounterTest {
         int expected = 30;
         assertThat(result).isEqualTo(expected);
     }
+
     @Test
     void twotest() {
         int start = 4;
@@ -20,6 +21,7 @@ class CounterTest {
         int expected = 28;
         assertThat(result).isEqualTo(expected);
     }
+
     @Test
     void minisStart() {
         int start = -4;
