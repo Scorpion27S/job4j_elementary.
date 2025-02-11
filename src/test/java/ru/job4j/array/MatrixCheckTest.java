@@ -18,15 +18,40 @@ public class MatrixCheckTest {
     }
 
     @DisplayName("false test")
-        @Test
-        public void falseHasMonoLower() {
-            char[][] input = {
-                    {' ', ' ', ' '},
-                    {' ', ' ', ' '},
-                    {'X', 'X', ' '},
-            };
-            int row = 2;
-            boolean result = MatrixCheck.monoHorizontal(input, row);
-            assertThat(result).isTrue();
+    @Test
+    public void falseHasMonoLower() {
+        char[][] input = {
+                {' ', ' ', ' '},
+                {' ', ' ', ' '},
+                {'X', 'X', ' '},
+        };
+        int row = 2;
+        boolean result = MatrixCheck.monoHorizontal(input, row);
+        assertThat(result).isFalse();
+    }
+
+    @Test
+    public void whenHasMonoVertical() {
+        char[][] input = {
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+        };
+        int column = 2;
+        boolean result = MatrixCheck.monoVertical(input, column);
+        assertThat(result).isTrue();
+    }
+
+    @DisplayName("false test 2")
+    @Test
+    public void whenHasMonoVerticalFalse() {
+        char[][] input = {
+                {' ', ' ', ' '},
+                {' ', ' ', 'X'},
+                {' ', ' ', 'X'},
+        };
+        int column = 2;
+        boolean result = MatrixCheck.monoVertical(input, column);
+        assertThat(result).isFalse();
     }
 }
