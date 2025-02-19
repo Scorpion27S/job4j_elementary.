@@ -1,8 +1,10 @@
 package ru.job4j.array;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
+@DisplayName("тест класса")
 public class SortSelectedTest {
     @Test
     public void whenSort() {
@@ -21,6 +23,7 @@ public class SortSelectedTest {
     }
 
     @Test
+    @DisplayName("проверка 123")
     public void whenSortthree() {
         int[] data = new int[] {3, 2, 1};
         int[] result = SortSelected.sort(data);

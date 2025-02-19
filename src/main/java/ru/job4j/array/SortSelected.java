@@ -1,5 +1,9 @@
 package ru.job4j.array;
 
+/**
+ * Java Doc
+ * Test
+ */
 public class SortSelected {
 
     public static int[] sort(int[] data) {

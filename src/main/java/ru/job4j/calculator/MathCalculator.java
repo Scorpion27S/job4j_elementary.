@@ -9,19 +9,19 @@ public class MathCalculator {
                 + multiply(first, second);
     }
 
-    public static double minusAnddelenie(double first, double second) {
+    public static double subtraction(double first, double second) {
         return minus(first, second)
                 + delenie(first, second);
     }
 
     public static double allsum(double first, double second) {
         return sumAndMultiply(first, second)
-                + minusAnddelenie(first, second);
+                + subtraction(first, second);
     }
 
     public static void main(String[] args) {
         System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
-        System.out.println("Результат расчета равен: " + minusAnddelenie(10, 20));
+        System.out.println("Результат расчета равен: " + subtraction(10, 20));
         System.out.println("Результат расчета равен: " + allsum(10, 20));
     }
 }

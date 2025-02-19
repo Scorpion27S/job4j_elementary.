@@ -10,6 +10,9 @@ public class ArrayDefinition {
         names[1] = "Anton-Lol";
         names[2] = "Lika";
         names[3] = "Tanki";
+        for (int i = 0; i < names.length; i++) {
+            System.out.println(names[i]);
+        }
         System.out.println("Массив names: " + names.length);
         System.out.println(names[0]);
         System.out.println(names[1]);
